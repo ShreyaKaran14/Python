@@ -1,0 +1,12 @@
+i=10
+print("hello world")
+print(i)
+type(i)
+i=10
+j=20
+if(i>j):
+  ptint(i)
+  print(j)
+  print(i+j)
+else:
+  print("hello World")
