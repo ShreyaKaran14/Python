@@ -1,0 +1,30 @@
+1.Create folder 'Test' in your home directory
+    mkdir Test
+2.Create below files
+  - employeelist
+  - skillset
+  cat >Employeelist
+  cat >skillset
+3.. Create folder Test2 in home directory
+- create symbolink and hard link for skillset file 
+- delete skillset file and check if hardlink and symbolic link file exists
+- explain the difference b/n symbolic and hard links
+         mkdir Test2
+         ln -s skillset sfile
+         ln skillset hfile
+         rm skillset
+  
+4. Provide read and write permission to 'user2' group
+test if user2 group users can access the file.
+   chmod user2 g+r+w File1
+5. Revoke write permission from user2 group and test the access again.
+      chmod user2 g+r+w File1
+6. Grant write permission for others and test it 
+       chmod user o+w File1
+7. Revoke write permission for others and test again
+      chmod o-w File1
+8.Change the group of employeelist file to 'user3'
+test if user3 group have access.
+    chgrp user3 employeelist
+ 
+  
